@@ -1,13 +1,104 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*---------------
+---------Basic-----*/
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+html{
+  background-color: #fff;
+  color:#555;
+  font-family: 'Lato','Arial',sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+.container{
+  max-width: 100%;
+}
+/*-------------------------------------
+Main Image
+-----------------------------------------*/
+.header{
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../src/Images/bannerimage.jpg);
+  
+}
+.background-image{
+  height: 100%;
+  width: 100%;
+}
+.clearfix{zoom:1}
+.clearfix:after{
+    content:'.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility:hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/*------------------------------
+---------HEADER NAVIGATION-----*/
+.main-nav{
+  display: flex;
+  background: #ed1c24;
+  height: 110px;
+  width:100%;
+  text-align: right;
+  list-style: none;
+  font-size: 0.8em;
+  margin-right: auto;
+  margin-left: auto;
+ font-family: 'Times New Roman', Times, serif;
+
+}
+
+.main-nav li a{
+  text-decoration: none;
+  color:whitesmoke;
+}
+
+
+
+
+
+
+
+h1,
+h2,
+h3{
+    text-transform: uppercase;
+    font-weight: 300;
+   
+}
+h1{
+   color: #fff;
+    margin-bottom: 40px;
+    margin-top: 0;
+    font-size:230%;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    clear: left;
+ }
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+h2:after
+{
+    content:"";
+    display: block;
+    height: 3px;
+    background-color:#ed1c24; 
+    width: 100px;
+    margin:0 auto;
+    margin-top: 30px;
 }
